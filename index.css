@@ -131,7 +131,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     header h1 {
         font-size: 1.8rem;
     }
