@@ -1,32 +1,19 @@
-/* Timothy McAllister Personal Website CSS */
-:root {
-    --primary: #7c3aed;
-    --primary-dark: #5b21b6;
-    --accent: #a78bfa;
-    --bg: #f6f6fa;
-    --text: #22223b;
-    --header-bg: #fff;
-    --card-bg: #fff;
-    --border-radius: 1rem;
-    --shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
-}
-
 body {
     margin: 0;
     font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    background: #f6f6fa;
+    color: #22223b;
     min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+    background: linear-gradient(90deg, #7c3aed 60%, #a78bfa 100%);
     color: #fff;
     padding: 2rem 1rem 1rem 1rem;
     text-align: center;
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
 }
 
 header h1 {
@@ -41,7 +28,7 @@ header img {
     height: 140px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid var(--accent);
+    border: 4px solid #a78bfa;
     margin: 1rem 0 0.5rem 0;
     box-shadow: 0 2px 12px rgba(124, 58, 237, 0.15);
 }
@@ -51,13 +38,13 @@ header p {
     font-size: 1.1rem;
 }
 
-header a {
+header a, footer a {
     color: #fff;
     text-decoration: underline;
     transition: color 0.2s;
 }
 header a:hover {
-    color: var(--accent);
+    color: #a78bfa;
 }
 
 nav ul {
@@ -84,8 +71,8 @@ h3 a {
 }
 
 h3 a:hover, nav a:hover {
-    background: var(--accent);
-    color: var(--primary-dark);
+    background: #a78bfa;
+    color: #5b21b6;
 }
 
 main {
@@ -95,9 +82,9 @@ main {
 }
 
 section {
-    background: var(--card-bg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
     margin-bottom: 2rem;
     padding: 2rem 1.5rem;
     transition: box-shadow 0.2s;
@@ -107,7 +94,7 @@ section:hover {
 }
 
 h2 {
-    color: var(--primary);
+    color: #7c3aed;
     margin-top: 0;
     font-size: 2rem;
     font-weight: 600;
@@ -115,7 +102,7 @@ h2 {
 }
 
 h3 {
-    color: var(--primary-dark);
+    color: #5b21b6;
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
     font-weight: 500;
@@ -135,10 +122,10 @@ article {
 footer {
     text-align: center;
     padding: 1.5rem 0 1rem 0;
-    background: var(--primary-dark);
+    background: #5b21b6;
     color: #fff;
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     font-size: 1rem;
     margin-top: 2rem;
 }
@@ -157,6 +144,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
     nav ul {
         gap: 0.7rem;
     }
